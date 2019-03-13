@@ -1,0 +1,297 @@
+@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Montserrat|Questrial|Quicksand|Raleway');
+@import url('https://fonts.googleapis.com/css?family=Questrial|Work+Sans');
+@import url('https://fonts.googleapis.com/css?family=Didact+Gothic|Hind+Vadodara|Poiret+One|Pontano+Sans|Questrial|Work+Sans');
+/*font-family: 'Raleway', sans-serif;*/
+/*font-family: 'Questrial', sans-serif;*/
+/*font-family: 'Quicksand', sans-serif;*/
+/*font-family: 'Montserrat', sans-serif;*/
+/*font-family: 'Major Mono Display', monospace;*/
+
+/*font-family: 'Work Sans', sans-serif;*/
+/*font-family: 'Questrial', sans-serif;*/
+
+/*font-family: 'Poiret One', cursive;*/
+/*font-family: 'Pontano Sans', sans-serif;*/
+/*font-family: 'Hind Vadodara', sans-serif;*/
+/*font-family: 'Didact Gothic', sans-serif;*/
+/*body * {*/
+/*font-family: 'Open Sans', sans-serif;*/
+/*}*/
+
+/*global styles*/
+a {
+    color: black !important;
+    text-decoration: none !important;
+}
+
+a:hover {
+    color: #49888c !important;
+}
+
+.main {
+    background: #dad18229;
+    color: black;
+}
+
+
+
+/* navbar */
+.navbar-container {
+    background-color: white;
+    margin-left: 55%;
+    padding-top: 15px;
+    text-align: center;
+}
+
+.nav-list {
+    margin-top: 15px;
+    text-decoration: none;
+    font-size: 1em;
+    font-family: 'Hind Vadodara', sans-serif;
+}
+
+.nav-list li {
+    display: inline-block;
+    padding: 5px;
+}
+
+.nav-list li a {
+    text-decoration: none;
+}
+
+/* Fixes dropdown menus placed on the right side */
+.ml-auto .dropdown-menu {
+    left: auto !important;
+    right: 0;
+}
+
+
+@media only screen and (max-width: 2561px) and (min-width: 1441px) {
+    .nav-list li {
+        font-size: 2em;
+    }
+}
+
+/*header*/
+.header-section {
+    margin-bottom: 25px;
+}
+.header {
+    margin: 0 auto;
+    text-align: center;
+    font-family: 'Major Mono Display', monospace;
+    font-size: 60px;
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 769px) {
+    .header {
+        font-size: 4em;
+    }
+}
+
+@media only screen and (max-width: 1441px) and (min-width: 1025px) {
+    .header {
+        font-size: 5em;
+    }
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1441px) {
+    .header {
+        font-size: 8em;
+    }
+}
+
+
+
+/*front page images*/
+.instrument-container .instrument-content {
+    display:block;
+    position: relative;
+}
+
+.instrument-container .right {
+    width: 60%;
+    margin-left: 45%;
+    display: block;
+}
+
+/*front page images*/
+.instrument-container .left {
+    width: 60%;
+    margin-right: 45%;
+    display: block;
+}
+
+.instrument-content:hover .overlay {
+    opacity: .9;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    height: 100%;
+    width: 50%;
+    opacity: 0;
+    transition: .5s ease;
+    background-color: rgb(27,27,27);
+}
+
+.violin-overlay {
+    left: 48%;
+}
+
+.guitar-overlay {
+    left: 4%;
+}
+
+.instrument-desc {
+    height: 100%;
+    display: flex;
+    color: white;
+    text-align: center;
+    justify-content:center;
+    align-content:center;
+    flex-direction: column;
+    font-size: 35px;
+    padding: 10px;
+    font-family: 'Major Mono Display', monospace;
+
+}
+
+@media only screen and (max-width: 780px) and (min-width: 415px) {
+    .instrument-desc {
+        font-size: 23px;
+    }
+}
+
+@media only screen and (max-width: 575px) {
+    .instrument-container .right {
+        margin: 0 auto;
+    }
+
+    .instrument-container .violin-overlay {
+        left: 24%;
+    }
+
+    .instrument-container .guitar-overlay {
+        left: 24%;
+    }
+
+    .instrument-container .left {
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .instrument-desc {
+        font-size: 23px;
+    }
+}
+
+/*about page*/
+.about-header {
+    float: left;
+    padding: 20px;
+    font-size: 41px;
+    margin-top: -39px;
+}
+
+.about-container {
+    padding: 30px;
+    display: flex;
+    justify-content: center;
+    align-content: flex-start;
+    border: 1px solid #000000;
+}
+
+.profile-image {
+    margin: 0 auto;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/guitar.jpg);
+    background-position: 5px -99px;
+    border-radius: 50%;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.about-description {
+    align-items: center;
+    justify-content: center;
+}
+
+.about-description p {
+    padding: 25px;
+}
+
+
+
+
+/*contact icons*/
+
+.contact-container {
+    margin-top: 3%;
+}
+.fa-icons {
+    padding: 0;
+    text-align: center;
+}
+
+.fa-icons li {
+    visibility: hidden;
+    display: inline-block;
+}
+
+.fa-icons li a:after {
+    font-family: 'FontAwesome' !important;
+    visibility: visible;
+}
+
+.fa-icons li a:hover {
+    color: #49888c;
+}
+
+.soundcloud {
+    position: relative;
+    left: -8px;
+    font-size: 47px;
+}
+
+.soundcloud:after {
+    content: '\f1be';
+}
+
+.mail {
+    font-size: 40px;
+}
+
+.mail:after {
+    content: '\f0e0';
+}
+
+.facebook {
+    font-size: 41px;
+}
+
+.facebook:after {
+    content: '\f082';
+}
+
+.instagram {
+    font-size: 43px;
+}
+
+.instagram:after {
+    content: '\f16d';
+
+}
+
+@media only screen and (max-width: 2561px) and (min-width: 1441px) {
+    .facebook, .instagram, .mail, .soundcloud {
+        font-size: 4em;
+    }
+}
+
+/*icon section*/
